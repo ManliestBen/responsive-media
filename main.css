@@ -1,0 +1,325 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+margin: 0;
+  font-family: Helvetica;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 100px 625px 625px 625px 625px 625px 625px 600px 600px 600px 600px 600px 600px 600px 600px auto;
+grid-template-areas: 
+ "hdr"
+ "feat1"
+ "feat2"
+ "feat3"
+ "feat4"
+ "feat5"
+ "feat6"
+ "latest1"
+ "latest2"
+ "latest3"
+ "latest4"
+ "latest5"
+ "latest6"
+ "latest7"
+ "latest8"
+ "ftr";
+}
+
+header {
+grid-area: hdr;
+background-color: #d33a2c;
+color: white;
+font-size: 60px;
+}
+
+
+section.feat1 {
+grid-area: feat1;
+background-color: #bc3429;
+color: white;
+font-size: 40px;
+}
+
+section.feat2 {
+grid-area: feat2;
+background-color: #c7382a;
+color: white;
+font-size: 40px;
+}
+
+section.feat3 {
+grid-area: feat3;
+background-color: #b1312c;
+color: white;
+font-size: 40px;
+}
+
+section.feat4 {
+  grid-area: feat4;
+  background-color: #bc3429;
+  color: white;
+  font-size: 40px;
+  }
+  
+  section.feat5 {
+  grid-area: feat5;
+  background-color: #c7382a;
+  color: white;
+  font-size: 40px;
+  }
+  
+  section.feat6 {
+  grid-area: feat6;
+  background-color: #b1312c;
+  color: white;
+  font-size: 40px;
+  }
+
+
+section.latest1 {
+grid-area: latest1;
+font-size: 30px;
+}
+
+section.latest2 {
+grid-area: latest2;
+font-size: 30px;
+}
+
+section.latest3 {
+grid-area: latest3;
+font-size: 30px;
+}
+  
+section.latest4 {
+grid-area: latest4;
+font-size: 30px;
+}
+
+section.latest5 {
+grid-area: latest5;
+font-size: 30px;  
+}
+  
+section.latest6 {
+grid-area: latest6;
+font-size: 30px;
+}
+  
+section.latest7 {
+grid-area: latest7;
+font-size: 30px;
+}
+    
+section.latest8 {
+grid-area: latest8;
+font-size: 30px;
+}
+/* 
+div.latest-text {
+font-size: 25px;
+} */
+
+footer {
+grid-area: ftr;
+background-color: #d33a2c;
+color: white;
+font-size: 20px;
+}
+
+a{
+color: white;
+}
+
+header, footer {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+nav {
+  display:none;
+}
+img.logo-sm {
+  display: flex;
+  height: 73px;
+  grid-area: hdr;
+  align-items: center;
+  margin-top: 30px;
+}
+
+img.logo-lg {
+  display: flex;
+  height: 73px;
+  grid-area: hdr;
+  align-items: center;
+  margin-top: 30px;
+  display: none;
+}
+
+button.menu {
+  display: flex;
+  width: 100px;
+  height: 25px;
+  grid-area: hdr;
+  align-self: center;
+  justify-self: flex-end;
+  margin-right: 10px;
+}
+
+div.f1 {
+  display: flex;
+  grid-area: feat1;
+  align-self: center;
+  color: white;
+}
+
+div.f2 {
+  display: flex;
+  grid-area: feat2;
+  align-self: center;
+  color: white;
+}
+
+div.f3 {
+  display: flex;
+  grid-area: feat3;
+  align-self: center;
+  color: white;
+}
+
+div.f4 {
+  display: flex;
+  grid-area: feat4;
+  align-self: center;
+  color: white;
+}
+
+div.f5 {
+  display: flex;
+  grid-area: feat5;
+  align-self: center;
+  color: white;
+}
+
+div.f6 {
+  display: flex;
+  grid-area: feat6;
+  align-self: center;
+  color: white;
+}
+
+div.l1 {
+  display: flex;
+  grid-area: latest1;
+  align-self: center;
+  color: black;
+}
+
+div.l2 {
+  display: flex;
+  grid-area: latest2;
+  align-self: center;
+  color: black;
+}
+
+div.l3 {
+  display: flex;
+  grid-area: latest3;
+  align-self: center;
+  color: black;
+}
+
+div.l4 {
+  display: flex;
+  grid-area: latest4;
+  align-self: center;
+  color: black;
+}
+
+div.l5 {
+  display: flex;
+  grid-area: latest5;
+  align-self: center;
+  color: black;
+}
+
+div.l6 {
+  display: flex;
+  grid-area: latest6;
+  align-self: center;
+  color: black;
+}
+
+div.l7 {
+  display: flex;
+  grid-area: latest7;
+  align-self: center;
+  color: black;
+}
+
+div.l8 {
+  display: flex;
+  grid-area: latest8;
+  align-self: center;
+  color: black;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 625px 625px 625px 600px 600px 600px 600px auto;
+    grid-template-areas: 
+      "hdr hdr"
+      "feat1 feat2"
+      "feat3 feat4"
+      "feat5 feat6"
+      "latest1 latest2"
+      "latest3 latest4"
+      "latest5 latest6"
+      "latest7 latest8"
+      "ftr ftr";
+  }
+  img.logo-sm{
+    display: none;
+  }
+  img.logo-lg{
+    display: flex;
+  }
+  nav {
+    width: 300px;
+    border: 3px solid white;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    display: flex;
+    grid-area: hdr;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 625px 625px 600px 600px 600px auto;
+    grid-template-areas: 
+      "hdr hdr hdr"
+      "feat1 feat2 feat3"
+      "feat4 feat5 feat6"
+      "latest1 latest2 latest3"
+      "latest4 latest5 latest6"
+      "latest7 latest8 ."
+      "ftr ftr ftr";
+  }
+  img.logo-sm{
+    display: none;
+  }
+  img.logo-lg{
+    display: flex;
+  }
+}
